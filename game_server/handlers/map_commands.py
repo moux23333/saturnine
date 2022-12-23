@@ -39,7 +39,7 @@ def handle_map_tp(conn: Connection, msg: MarkMapReq):
             conn.player.scene_id = scene_id
             conn.player.get_cur_avatar().motion = pos
         elif msg.mark:
-            if msg.mark.point_type == 4:
+            if msg.mark.point_type == 3:
                 global cg_id
                 cg_id = 1
             if msg.mark.name:
